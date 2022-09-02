@@ -19,7 +19,7 @@ I am sharing/adding few dashboards in this repo, which will be helpful to unders
 
 ![logo](./images/kubernetes-resource-overview.png)
 
-In the above image (from the L1 dashboard) it is clear that the k8s cluster is over provisioned.
+In the above image (from the L1 dashboard) it is clear that the k8s cluster is over provisioned. The k8s cluster is provisioned based on the requests, however, the actual usage is very less. We need to tweak the resources requests accordingly to scale down the node, which reduce the overall cost.
 
 ## Prerequisites 
 This dashboard is using some [recording rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/) as few panel queries. Basically, those rules are there by default if the Prometheus is setup though the community helm chart. 
