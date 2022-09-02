@@ -1,6 +1,6 @@
 # Grafana dashboard for analysing Kubernetes resource wastage
 
-![logo](https://raw.githubusercontent.com/dotdc/media/main/grafana-dashboards-kubernetes/kubernetes-grafana-dashboards-logo.png)
+![logo](./images/kubernetes-grafana-dashboards-logo.png)
 
 ## Table of contents
 
@@ -17,6 +17,10 @@ I was spending considerable amount of time on Cost optimisation and did a lot of
 
 I am sharing/adding few dashboards in this repo, which will be helpful to understand whether the Kubernetes cluster is over provisioned or now. Based on the analysis, you will get a better start to think about the optimisation of your application resources requests and eventually scale down the Kubernetes cluster and optimise the cost
 
+![logo](./images/kubernetes-resource-overview.png)
+
+In the above image (from the L1 dashboard) it is clear that the k8s cluster is over provisioned.
+
 ## Prerequisites 
 This dashboard is using some [recording rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/) as few panel queries. Basically, those rules are there by default if the Prometheus is setup though the community helm chart. 
 
@@ -24,7 +28,6 @@ So these are the prerequisites:
 
 - [Prometheus](https://www.crybit.com/category/devops/prom/) should install through operator. Otherwise, you need to create those recoding rules. 
 - One of the drilldown dashboard links to one dashboard comes via Mixin dashboard. That also come through the community chart.
-
 
 ## Usage
 The dashboards are adding inside the folder dashboards. You can copy the JSON content and add into your Grafana (by using Import option).
