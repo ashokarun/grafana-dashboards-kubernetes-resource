@@ -32,8 +32,12 @@ So these are the prerequisites:
 ## Usage
 The dashboards are adding inside the folder dashboards. You can copy the JSON content and add into your Grafana (by using Import option).
 
+Once imported all panels, you can start analysis from the L1 -> L2 -> L3
+
+L1 gives you an overview of your Kubernetes cluster resource allocation. If you notice any high requests configured on the name spaces, click on the namespace name and go to the L2 and analyze further. Further drill down can be done from the container level by using L3 dashboard.
+
 ## Note
-The links in dashboard might break for the mixin (L3). You can edit and update the link after setting up the L2 dashboard.
+The links in L2 dashboard might break because of the ID change of the mixin (L3). You can edit and update the link after setting up the L2 dashboard. If you do not have the Mixins dashboard you can import the L3 dashboard as well. No issues in that case.
 
 ## Contributing
 Feel free to contribute to this project:
